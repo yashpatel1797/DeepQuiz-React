@@ -1,0 +1,24 @@
+import React, { useState, useEffect } from 'react'
+import "./FeatureCategory.css"
+import axios from 'axios'
+import { Card } from ".."
+const FeatureCategory = () => {
+    const [category, setCategory] = useState([])
+    useEffect(() => {
+        (async () => {
+            const { data: { categories } } = await axios.get("/api/categories");
+            setCategory(categories);
+        })()
+    }, [])
+    return (
+        <>
+            <h2 className="featured-title">Featured category</h2>
+
+            <div className="grid-3-column" id="category">
+                {category.map(data => <Card data={data} key={data._id} />)}
+            </div>
+        </>
+    )
+}
+
+export { FeatureCategory }

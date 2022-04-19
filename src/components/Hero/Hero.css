@@ -1,0 +1,18 @@
+.intro {
+    position: relative;
+    padding: 1rem 3rem;
+  }
+  .text-intro {
+    padding: 1rem;
+  }
+  .grid-50-50 {
+    background-color: var(--color-grey-light-2);
+  }
+  .img-main {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .margin-s {
+    margin-top: 2rem;
+  }
