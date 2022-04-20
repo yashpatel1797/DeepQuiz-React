@@ -1,0 +1,17 @@
+.container {
+    justify-content: center;
+}
+.rules {
+    margin-top: 10rem;
+    padding: 3rem 5rem;
+    border: 2px solid var(--color-primary);
+    border-radius: 1rem;
+}
+
+.rules-info {
+    display: flex;
+    align-items: center;
+}
+.rules-info > span {
+    margin-right: 1rem;
+}

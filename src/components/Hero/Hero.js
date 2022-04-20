@@ -12,7 +12,7 @@ const Hero = () => {
                         <p className="body-cp-lg">
                             Check you knowledge on hollywood movie directors and their movies.
                         </p>
-                        <Link to="" className="btn-solid-text">
+                        <Link to="/category" className="btn-solid-text">
                             <button className="btn btn-solid">Quiz</button>
                         </Link>
                     </div>
