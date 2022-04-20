@@ -1,16 +1,14 @@
 .App{
     min-height: calc(100vh - 5rem);
-    /* background-color: var(--color-grey-light-1); */
 }
 .dark-theme .text-intro,
 .dark-theme .login-form {
-  color: #a0aec0;
-  background-color: #2b2f3d;
+    color: #a0aec0;
+    background-color: #2b2f3d;
 }
 .dark-theme .nav-bar {
-  color: #a0aec0;
-  background-color: #212726;
-  background-color: #434047;
+    color: #a0aec0;
+    background-color: #434047;
 }
 
 .spacer-1rem {
