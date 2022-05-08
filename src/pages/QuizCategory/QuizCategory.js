@@ -6,14 +6,14 @@ const QuizCategory = () => {
     const [category, setCategory] = useState([])
     useEffect(() => {
         (async () => {
-            const { data: { categories } } = await axios.get("/api/categories");
-            setCategory(categories);
+            const { data: { quizes } } = await axios.get("/api/quizzes");
+            setCategory(quizes);
         })()
     }, [])
     return (
         <>
-            <div class="spacer-3rem"></div>
-            <h2 class="featured-title">Quiz Category</h2>
+            <div className="spacer-3rem"></div>
+            <h2 className="featured-title">Quiz Category</h2>
             <div className={`grid-4-column ${styles.center}`} id="category">
                 {category.map(data => <Card data={data} key={data._id} />)}
             </div>
