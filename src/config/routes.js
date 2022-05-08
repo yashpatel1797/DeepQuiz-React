@@ -1,5 +1,5 @@
 import MockMan from 'mockman-js';
-import { Home, Quiz, QuizCategory, Result } from "pages"
+import { Home, Quiz, QuizCategory, Result, Login, Signup } from "pages"
 const routes = [
     {
         path: "/",
@@ -8,6 +8,14 @@ const routes = [
     {
         path: "/category",
         element: <QuizCategory />,
+    },
+    {
+        path: "/login",
+        element: <Login />,
+    },
+    {
+        path: "/signup",
+        element: <Signup />,
     },
     {
         path: "/quiz/:quizId",
