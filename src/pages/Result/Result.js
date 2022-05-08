@@ -8,7 +8,6 @@ const Result = () => {
 
 
     const calculateScore = (quiz, answers) => {
-        console.log(quiz);
         let score = 0;
         score = quiz.reduce((acc, curr) =>
             curr.options.find(({ _id }) => _id === answers[curr._id])?.isCorrect ? acc + 10 : acc, score);
