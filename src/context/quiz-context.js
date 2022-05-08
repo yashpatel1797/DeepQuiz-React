@@ -10,7 +10,6 @@ const QuizProvider = ({ children }) => {
         currentQuestionIndex: 0
     })
     const { quiz, answers, currentQuestionIndex } = quizState;
-    // console.log(quiz, currentQuestionIndex);
     return (<QuizContext.Provider value={{ quiz, answers, currentQuestionIndex, quizDispatch }}>
         {children}
     </QuizContext.Provider>)
