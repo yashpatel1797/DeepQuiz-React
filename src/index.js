@@ -9,16 +9,16 @@ import { ThemeProvider, QuizProvider, AuthProvider } from "context";
 makeServer();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <ThemeProvider>
-        <AuthProvider>
+  <AuthProvider>
+    <React.StrictMode>
+      <BrowserRouter>
+        <ThemeProvider>
           <QuizProvider>
             <App />
           </QuizProvider>
-        </AuthProvider>
-      </ThemeProvider>
-    </BrowserRouter>
-  </React.StrictMode>,
+        </ThemeProvider>
+      </BrowserRouter>
+    </React.StrictMode>
+  </AuthProvider>,
   document.getElementById("root")
 );
