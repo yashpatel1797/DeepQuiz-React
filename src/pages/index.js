@@ -1,3 +1,4 @@
 export { Home } from "./Home/Home"
 export { QuizCategory } from "./QuizCategory/QuizCategory"
-export { Rules } from "./Rules/Rules"
+export { Quiz } from "./Quiz/Quiz"
+export { Result } from "./Result/Result"

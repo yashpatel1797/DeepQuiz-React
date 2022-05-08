@@ -33,4 +33,10 @@ export const categories = [
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ8KrPYmUxZVFZMIut0qBBaM7MHoEa1Tv6WDXN4uDvsn39POpAvyo9QS9PfL65L9VGq_s&usqp=CAU",
     description: "Christopher Nolan"
   },
+  {
+    _id: uuid(),
+    categoryName: "Steven Spielberg",
+    image: "https://i.pinimg.com/originals/f8/2f/ad/f82fadde1a7627743ff99eef3440d925.jpg",
+    description: "Steven Spielberg"
+  },
 ];

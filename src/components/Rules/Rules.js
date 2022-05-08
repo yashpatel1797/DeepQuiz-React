@@ -1,6 +1,17 @@
-import React from 'react'
+import axios from 'axios';
+import { useQuiz } from 'context';
+import React, { useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import styles from "./Rules.module.css"
-const Rules = () => {
+const Rules = ({ setShowRules }) => {
+    const { state } = useLocation();
+    const { quiz, quizDispatch } = useQuiz();
+
+
+    const startHandler = () => {
+        setShowRules(false)
+        quizDispatch({ type: "SET_CURRENT_QUESTION_INDEX", payload: 0 })
+    }
     return (
         <div className={`${styles.container} container`}>
             <div className={`${styles.rules} ${styles.container} container`}>
@@ -21,9 +32,8 @@ const Rules = () => {
                     </p>
                 </div>
                 <div className="spacer-2rem"></div>
-                <a href="/page/questions.html">
-                    <button className="btn btn-solid">Start Quiz</button>
-                </a>
+                <button className="btn btn-solid"
+                    onClick={startHandler}>Start Quiz</button>
             </div>
         </div>
     )

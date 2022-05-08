@@ -8,6 +8,7 @@ export const getAllQuizesHandler = function () {
 
 export const getSingleQuizHandler = function (schema, request) {
   const Id = request.params.quizId;
+  console.log(Id);
   try {
     const quiz = schema.quizzes.findBy({ _id: Id });
     return new Response(200, {}, { quiz });

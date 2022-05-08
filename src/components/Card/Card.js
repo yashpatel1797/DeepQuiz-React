@@ -19,7 +19,7 @@ const Card = ({ data }) => {
                     <p>Take this quiz to test your knowledge on {data.categoryName}!</p>
                     <p>5 Questions</p>
                 </div>
-                <Link to="/rules" className="btn-solid-text">
+                <Link to={`/quiz/${data._id}`} className="btn-solid-text">
                     <button className="btn btn-solid btn-icon-center">
                         <span className="material-icons"> save </span>Play Now
                     </button>
