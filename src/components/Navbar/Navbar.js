@@ -20,24 +20,10 @@ const Navbar = () => {
                     </Link>
                 </div>
             </div>
-            <div className="nav-search">
-                <input
-                    type="text"
-                    className="search-input"
-                    placeholder="Search for product"
-                />
-                <Link to="" className="btn btn-search">
-                    <span className="material-icons"> search </span>
-                </Link>
-            </div>
             <button className="btn btn-toggle" onClick={toggleTheme}>
                 <span className="material-icons" id="light_mode"> {theme === "dark" ? "light_mode" : "dark_mode"} </span>
             </button>
             <div className="nav-user">
-                {/* <Link to="" className="btn nav-user-btn">
-                    <span className="material-icons"> person </span>
-                    <span>Login</span>
-                </Link> */}
 
                 <Link to={isLogin ? "/profile" : "/login"} className="btn nav-user-btn" onClick={() => setToggle(false)}>
                     <span className="material-icons" > person </span>
