@@ -65,6 +65,12 @@ npm start
 - **Hosted:** Netlify
 
 ## Screenshot
+![1](https://user-images.githubusercontent.com/16306433/169643838-b188f3bb-e777-4214-ae0d-f3bfa769d1f8.PNG)
+![2](https://user-images.githubusercontent.com/16306433/169643842-c9b7f358-8a47-4a7d-a3fb-3d6e229d97e1.PNG)
+![3](https://user-images.githubusercontent.com/16306433/169643847-268bade5-1ab0-4dba-bbc3-8744df12a672.PNG)
+![4](https://user-images.githubusercontent.com/16306433/169643850-a92e70ce-799a-4bb1-896e-0018bafd3d87.PNG)
+
+
 
 ## Links
 
